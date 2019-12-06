@@ -1,6 +1,6 @@
 # PtHackathon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+Daylong hackathon for the princes trust to help young people start their own businesses. Total dev time was around 5 hours as the judging was 3:30 the same day
 
 ## Development server
 
