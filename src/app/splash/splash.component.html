@@ -1,0 +1,74 @@
+<mat-card class="profile-card">
+  <div class="profile-top-row">
+    <div style="text-align: center;">
+      <div class="profile-image"></div>
+      <img class="award-icon" src="/assets/competitor-analysis-award.svg">
+      <img class="award-icon" src="/assets/finacial-forecast-award.svg">
+    </div>
+    <div>
+      <h2>Warriors</h2>
+      <h3>Fitness Company</h3>
+    </div>
+  </div>
+</mat-card>
+<mat-tab-group color="warn">
+  <mat-tab label="Dashboard">
+    <div class="dashboard-container">
+      <mat-card [routerLink]="['/business-plan']">
+        <div class="card-container">
+          <h3>Business plan</h3>
+          <div class="progress-bar-container">
+            <mat-progress-bar [mode]="'determinate'" value="50" color="warn"></mat-progress-bar>
+            <span>50%</span>
+          </div>
+          <mat-icon class="right-chevron">chevron_right</mat-icon>
+        </div>
+      </mat-card>
+      <mat-card>
+        <div class="card-container">
+          <h3>Courses</h3>
+          <div>Course 1</div>
+          <div class="progress-bar-container">
+            <mat-progress-bar [mode]="'determinate'" value="30" color="warn"></mat-progress-bar>
+            <span>30%</span>
+            <mat-icon class="right-chevron">chevron_right</mat-icon>
+          </div>
+
+          <div>Course 2</div>
+          <div class="progress-bar-container">
+            <mat-progress-bar [mode]="'determinate'" value="80" color="warn"></mat-progress-bar>
+            <span>80%</span>
+          </div>
+        </div>
+      </mat-card>
+      <mat-card [routerLink]="['/mentor-comments']">
+        <div class="card-container">
+          <h3>Mentor Comments</h3>
+          <h4>You have 5 unread messages!</h4>
+          <mat-icon class="right-chevron">chevron_right</mat-icon>
+        </div>
+      </mat-card>
+      <mat-card>
+        <div class="card-container">
+          <h3>Upcoming events</h3>
+          <div class="diary-block">
+            <div class="time">
+              15th Dec
+            </div>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+          </div>
+          <div class="diary-block">
+            <div class="time">
+              1st Jan
+            </div>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+          </div>
+          <mat-icon class="right-chevron">chevron_right</mat-icon>
+        </div>
+      </mat-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="Community">
+    <img [routerLink]="['forum']" class="community-image" src="/assets/Communities.png">
+  </mat-tab>
+</mat-tab-group>

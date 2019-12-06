@@ -1,1 +1,21 @@
-hello world
+<nav>
+  <mat-toolbar class="toolbar">
+    <div class="image-container">
+      <img
+        class="logo-image"
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/The_Prince%27s_Trust.svg/1200px-The_Prince%27s_Trust.svg.png"
+        [routerLink]="['/']"
+      >
+      <mat-divider class="divider" [vertical]="true"></mat-divider>
+      <h3 class="title">Enterprise</h3>
+    </div>
+    <div class="icon-container">
+      <mat-icon matBadge="8" matBadgePosition="before" matBadgeColor="warn">notifications</mat-icon>
+      <mat-icon class="profile-icon">menu</mat-icon>
+    </div>
+  </mat-toolbar>
+</nav>
+<div class="page-container">
+  <router-outlet></router-outlet>
+</div>
+<img class="chat-btn" src="/assets/chat-btn.png">

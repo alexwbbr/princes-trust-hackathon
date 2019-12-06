@@ -1,0 +1,34 @@
+.block-container {
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid black;
+  }
+
+  .add-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 9px;
+  }
+}
+.demo-text-area {
+  width: 100%;
+  min-height: 150px;
+  border: 1px dotted black;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 7px;
+  margin-top: 7px;
+
+  button:first-of-type {
+    margin-right: 8px;
+  }
+}
+.pie-chart {
+  width: 320px;
+}
+.pie-container {
+  text-align: center;
+}

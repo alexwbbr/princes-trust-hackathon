@@ -1,0 +1,39 @@
+<div class="top-nav">
+  <div class="back-container" [routerLink]="['/']">
+    <mat-icon>chevron_left</mat-icon>
+    Back
+  </div>
+  <button mat-raised-button color="warn">+ create new thread</button>
+</div>
+
+<mat-toolbar class="forum-title">
+  <img src="/assets/mindset.svg">
+  <h2>Confidence & mindset</h2>
+</mat-toolbar>
+<div class="forum-posts">
+  <mat-toolbar [routerLink]="['/forum-post']">
+    <img class="forum-icon" src="/assets/speak.svg">
+    <h2>Speaking to customers</h2>
+    <mat-icon class="forum-arrow">arrow_right_alt</mat-icon>
+  </mat-toolbar>
+  <mat-toolbar>
+    <img class="forum-icon" src="/assets/motivate.svg">
+    <h2>Self motivation</h2>
+    <mat-icon class="forum-arrow">arrow_right_alt</mat-icon>
+  </mat-toolbar>
+  <mat-toolbar>
+    <img class="forum-icon" src="/assets/public-speaking.svg">
+    <h2>Public speaking</h2>
+    <mat-icon class="forum-arrow">arrow_right_alt</mat-icon>
+  </mat-toolbar>
+  <mat-toolbar>
+    <img class="forum-icon" src="/assets/pitching.svg">
+    <h2>Pitching tips</h2>
+    <mat-icon class="forum-arrow">arrow_right_alt</mat-icon>
+  </mat-toolbar>
+  <mat-toolbar>
+    <img class="forum-icon" src="/assets/videos.svg">
+    <h2>Recommended videos</h2>
+    <mat-icon class="forum-arrow">arrow_right_alt</mat-icon>
+  </mat-toolbar>
+</div>

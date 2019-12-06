@@ -1,0 +1,42 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-container {
+  display: flex;
+  align-items: center;
+
+  mat-icon {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+}
+.forum-title {
+  margin-top: 32px;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  img {
+    margin-right: 13px;
+    width: 30px;
+  }
+}
+
+.forum-posts {
+  padding: 12px;
+
+  mat-toolbar {
+    margin-bottom: 4px;
+  }
+}
+.forum-arrow {
+  margin-left: auto;
+}
+.forum-icon {
+  margin-right: 13px;
+  width: 30px;
+}

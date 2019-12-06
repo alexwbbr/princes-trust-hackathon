@@ -1,0 +1,86 @@
+@import "../colours";
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.profile-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid $ptRed;
+  background-image: url("/assets/profile_pic.png");
+  margin-bottom: 8px;
+}
+
+.bottom-row {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 12px;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  padding: 4px;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  mat-progress-bar {
+    max-width: 80%;
+
+  }
+}
+
+.card-container {
+  max-width: 90%;
+  position: relative;
+
+  mat-icon {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-75%);
+  }
+}
+.diary-block {
+  display: flex;
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+.time {
+  margin-right: 17px;
+}
+.right-chevron {
+  color: rgb(57, 186, 157);
+}
+.community-image {
+  width: 340px;
+  margin-top: 65px;
+}
+.award-icon {
+  width: 28px;
+  margin-right: 8px;
+}

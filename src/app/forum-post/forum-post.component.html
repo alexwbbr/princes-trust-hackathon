@@ -1,0 +1,26 @@
+<div class="top-nav">
+  <div class="back-container" [routerLink]="['/forum']">
+    <mat-icon>chevron_left</mat-icon>
+    Back
+  </div>
+</div>
+<mat-toolbar class="forum-title">
+  <h2>Speaking to customers</h2>
+</mat-toolbar>
+<div class="forum-post" *ngFor="let post of forumPosts">
+  <div class="icon-container">
+    <div class="profile-icon">
+      <mat-icon *ngIf="post?.icon !== 'profile'">{{post?.icon}}</mat-icon>
+      <div *ngIf="post?.icon === 'profile'" class="profile-icon-image"></div>
+    </div>
+    <div>{{post?.name}}</div>
+  </div>
+  <mat-divider vertical="true"></mat-divider>
+  <p class="forum-text">
+    {{post?.text}}
+  </p>
+</div>
+<div class="chat-bar">
+  <input matInput id="text-input" placeholder="Enter post here">
+  <button mat-raised-button (click)="post()" color="warn">post</button>
+</div>

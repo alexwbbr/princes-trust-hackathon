@@ -1,0 +1,84 @@
+<div class="pie-container">
+<img class="pie-chart" src="/assets/pie-chart.png">
+</div>
+<mat-accordion multi="false">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h4>Market Research</h4>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="block-container">
+      <h4>Who They Are</h4>
+      <p *ngFor="let text of textList">
+        {{text}}
+      </p>
+      <textarea id="demo-text-area" *ngIf="showInput" matInput class="demo-text-area"></textarea>
+      <div class="button-container">
+        <button *ngIf="showInput" mat-raised-button (click)="showInput = false">Cancel</button>
+        <button *ngIf="showInput" mat-raised-button (click)="save()">Save</button>
+      </div>
+      <div class="add-block" (click)="showInput = true" *ngIf="!showInput">
+        <mat-icon>add</mat-icon>
+        ADD NOTES
+      </div>
+    </div>
+
+    <div class="block-container">
+      <h4>Where They Are</h4>
+      <p>
+        Pulvinar sapien et ligula ullamcorper malesuada proin libero
+        nunc consequat. Iaculis urna id volutpat lacus laoreet non curabitur. Lacinia at quis risus sed vulputate odio
+        ut. Quisque non tellus orci ac auctor augue mauris augue. Nullam eget felis eget nunc lobortis mattis aliquam
+        faucibus purus.
+      </p>
+      <div class="add-block">
+        <mat-icon>add</mat-icon>
+        ADD NOTES
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h4>Competitor Analysis</h4>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h4>Operation + Logistics</h4>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h4>Cost + Pricing</h4>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h4>Financial Forecasts</h4>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h4>Survivor Budget</h4>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h4>Cash FLow Forecasts</h4>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+</mat-accordion>

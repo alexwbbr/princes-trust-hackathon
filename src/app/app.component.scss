@@ -1,0 +1,52 @@
+@import "colours";
+
+.logo-image {
+  width: 45px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.toolbar {
+  background-color: white;
+  border-bottom: 2px solid #eceeef;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: $ptRed;
+  cursor: pointer;
+}
+.page-container {
+  padding: 14px;
+}
+.divider {
+  height: 45px;
+  border-right-color: $ptRed;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+}
+.title {
+  margin-left: 20px;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+
+  mat-icon {
+    color: $ptRed;
+    margin: 4px;
+  }
+}
+.chat-btn {
+  position: fixed;
+  bottom: -12px;
+  z-index: 99;
+  right: 0;
+  width: 150px;
+}
